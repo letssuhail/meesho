@@ -3,11 +3,17 @@ import 'package:meesho/components/productslider.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:intl/intl.dart';
 
-class ProductDetailScreen extends StatelessWidget {
+class ProductDetailScreen extends StatefulWidget {
   const ProductDetailScreen({super.key});
 
   @override
+  State<ProductDetailScreen> createState() => _ProductDetailScreenState();
+}
+
+class _ProductDetailScreenState extends State<ProductDetailScreen> {
+  @override
   Widget build(BuildContext context) {
+    // var controller = 
     return Scaffold(
       appBar: AppBar(
         // backgroundColor: Colors.teal,
@@ -15,19 +21,19 @@ class ProductDetailScreen extends StatelessWidget {
           const Icon(
             Icons.search,
             color: Colors.blue,
-            size: 30,
+            size: 25,
           ),
-          6.widthBox,
+          10.widthBox,
           Icon(
             Icons.favorite,
             color: Colors.red,
-            size: 30,
+            size: 25,
           ),
-          6.widthBox,
+          10.widthBox,
           Icon(
             Icons.shopping_cart,
             color: Colors.purple,
-            size: 30,
+            size: 25,
           ),
           10.widthBox,
         ],
@@ -90,7 +96,9 @@ class ProductDetailScreen extends StatelessWidget {
                     (index) => Container(
                           height: 85,
                           width: 65,
-                          // color: Colors.teal,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.purple)
+                          ),
 
                           margin: EdgeInsets.only(right: 8),
                           child: ClipRRect(

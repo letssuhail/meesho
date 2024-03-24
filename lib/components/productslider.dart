@@ -55,7 +55,7 @@ class _ProductSliderState extends State<ProductSlider> {
             },
           ),
         ),
-        SizedBox(height: 10),
+       const SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: imageList.asMap().entries.map((entry) {
@@ -65,10 +65,10 @@ class _ProductSliderState extends State<ProductSlider> {
               child: Container(
                 width: currentIndex == index ? 17 : 17,
                 height: 5,
-                margin: EdgeInsets.symmetric(horizontal: 3),
+                margin: const EdgeInsets.symmetric(horizontal: 3),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: currentIndex == index ? Color(0xff582244) : Colors.grey,
+                  color: currentIndex == index ? const  Color(0xff582244) : Colors.grey,
                 ),
               ),
             );

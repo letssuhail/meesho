@@ -17,7 +17,7 @@ class HomeProductGrid extends StatelessWidget {
       itemCount: 10,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: 320,
+        mainAxisExtent: 329,
         crossAxisSpacing: 1,
         mainAxisSpacing: 2,
       ),
@@ -75,21 +75,21 @@ class HomeProductGrid extends StatelessWidget {
                     children: [
                       '7% OFF'
                           .text
-                          .color(Color.fromARGB(255, 255, 119, 0))
+                          .color( const Color.fromARGB(255, 255, 119, 0))
                           .size(10)
                           .make(),
                       Container(
                         height: 20,
                         width: 50,
                         decoration: BoxDecoration(
-                          color: Color(0xff44BC75),
+                          color: const Color(0xff44BC75),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [4.5.text.white.fontWeight(FontWeight.bold).make(),
                             3.widthBox,
-                            Icon(Icons.star, size: 14,color: Colors.white,)],
+                            const Icon(Icons.star, size: 14,color: Colors.white,)],
                         ),
                       )
                     ],

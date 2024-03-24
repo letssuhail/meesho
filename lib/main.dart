@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:meesho/splashscreen/splashscreen.dart';
 
 void main() {
-  // SystemChrome.setSystemUIOverlayStyle(
-  //   SystemUiOverlayStyle(statusBarBrightness: Brightness.dark));
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(statusBarBrightness: Brightness.dark));
   runApp(const MyApp());
 }
 
